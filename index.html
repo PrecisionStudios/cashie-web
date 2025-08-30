@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cashie — Open‑Source Budget Planner</title>
+  <meta name="description" content="Cashie is a lightweight, offline-first budget planner. Track income, expenses, categories, and savings goals—open source and free." />
+  <meta name="theme-color" content="#34c759" />
+  <meta property="og:title" content="Cashie — Open‑Source Budget Planner" />
+  <meta property="og:description" content="Track your money. Offline. Open-source. Yours forever." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/social-card.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="container header">
+    <a class="brand" href="#" aria-label="Cashie home">
+      <img src="assets/logo.svg" class="logo" alt="Cashie logo" />
+      <span>Cashie</span>
+      <span class="badge">Beta</span>
+    </a>
+    <nav class="nav">
+      <a class="link" href="#features">Features</a>
+      <a class="link" href="#screens">Screens</a>
+      <a class="link" href="#roadmap">Roadmap</a>
+      <button id="themeToggle" class="btn secondary small" title="Toggle theme">☀️/🌙</button>
+      <a class="btn" href="https://github.com/PrecisionStudios/cashie" target="_blank" rel="noopener">View on GitHub</a>
+      <div class="gh-badges">
+      <a class="badge-ghost" id="starsBadge" href="#" target="_blank" rel="noopener" aria-label="GitHub stars">⭐ 0</a>
+      <a class="badge-ghost" id="forksBadge" href="#" target="_blank" rel="noopener" aria-label="GitHub forks">🍴 0</a>
+    </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Track your money. <span class="accent">Offline.</span> Open‑source.</h1>
+        <p class="lead">A fast, privacy‑first budget planner that runs entirely in your browser. No sign‑ups, no trackers — your data stays on your device.</p>
+        <div class="cta">
+          <a class="btn xl" href="https://github.com/PrecisionStudios/cashie" target="_blank" rel="noopener">⭐ Star on GitHub</a>
+          <a class="btn secondary xl" href="https://github.com/PrecisionStudios/cashie/releases" target="_blank" rel="noopener">⬇︎ Download Beta</a>
+        </div>
+        <ul class="bullets">
+          <li>Pure HTML/CSS/JS — no backend</li>
+          <li>Offline‑first (LocalStorage)</li>
+          <li>Export/Import JSON & CSV</li>
+        </ul>
+      </div>
+      <div class="hero-shot">
+        <img src="assets/screenshot-hero.png" alt="Cashie app screenshot" />
+      </div>
+    </section>
+
+    <section id="features" class="section container">
+      <h2>What you get in <span class="accent">Beta</span></h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Transactions</h3>
+          <p>Add income & expenses, search, and edit with ease.</p>
+        </div>
+        <div class="card">
+          <h3>Categories & Budgets</h3>
+          <p>Allocate monthly budgets and see progress instantly.</p>
+        </div>
+        <div class="card">
+          <h3>Savings Goals</h3>
+          <p>Set targets and track progress over time.</p>
+        </div>
+        <div class="card">
+          <h3>Charts</h3>
+          <p>Pie chart by category and monthly cashflow.</p>
+        </div>
+        <div class="card">
+          <h3>Export & Backup</h3>
+          <p>JSON/CSV export and simple import flow.</p>
+        </div>
+        <div class="card">
+          <h3>Offline‑first</h3>
+          <p>Works without internet — all data stays in your browser.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="screens" class="section container">
+      <h2>Screenshots</h2>
+      <div class="screens">
+        <img src="assets/screenshot-1.png" alt="Screenshot 1">
+        <img src="assets/screenshot-2.png" alt="Screenshot 2">
+        <img src="assets/screenshot-3.png" alt="Screenshot 3">
+      </div>
+      <p class="muted small">Tip: replace these PNGs with actual screenshots of your build.</p>
+    </section>
+
+    <section id="roadmap" class="section container">
+      <h2>Roadmap</h2>
+      <div class="roadmap">
+        <div class="road">
+          <h3>Next</h3>
+          <ul>
+            <li>Recurring transactions & bill reminders</li>
+            <li>Multi‑currency & FX editor</li>
+            <li>Analytics & forecasting</li>
+          </ul>
+        </div>
+        <div class="road">
+          <h3>Later</h3>
+          <ul>
+            <li>Profiles (personal/business)</li>
+            <li>PWA install + sync option</li>
+            <li>Theme customization</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container row">
+        <h2>Like the idea? Support the project with a star ⭐</h2>
+        <a class="btn" href="https://github.com/PrecisionStudios/cashie" target="_blank" rel="noopener">Go to GitHub</a>
+      </div>
+    </section>
+  
+    <section id="changelog" class="section container">
+      <h2>Changelog</h2>
+      <p class="muted small">Automatically pulled from GitHub Releases (fallback to latest commits).</p>
+      <div id="changelogList" class="changelog"></div>
+      <p class="muted small">Having trouble loading? <a id="changelogLink" class="link" target="_blank" rel="noopener">View on GitHub</a></p>
+    </section>
+
+  </main>
+
+  <footer class="container footer">
+    <div class="row foot">
+      <div class="left">
+        <a class="brand" href="https://precisionstudios.me"><img src="assets/logo.svg" class="logo small" alt=""> Cashie by PrecisionStudios</a>
+        <p class="muted small">MIT License · © 2025</p>
+      </div>
+      <div class="right">
+        <a class="link" href="https://github.com/PrecisionStudios/cashie" target="_blank" rel="noopener">GitHub</a>
+        <a class="link" href="https://github.com/PrecisionStudios/cashie/issues" target="_blank" rel="noopener">Issues</a>
+        <a class="link" href="https://github.com/PrecisionStudios/cashie/pulls" target="_blank" rel="noopener">Contribute</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

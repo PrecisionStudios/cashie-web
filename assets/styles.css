@@ -1,0 +1,73 @@
+/* Cashie landing — modern, minimal, responsive. MIT */
+:root{
+  --bg:#0b0c0f; --text:#f5f7fb; --muted:#a2a7b4; --card:#12141a; --border:#1f2430;
+  --brand:#34c759; --brand2:#2ea44f; --shadow:0 10px 30px rgba(0,0,0,.25);
+}
+html[data-theme="light"]{ --bg:#f7f8fb; --text:#0b0c0f; --muted:#667085; --card:#fff; --border:#e6e8ee; --shadow:0 8px 24px rgba(0,0,0,.08); }
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0; font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Inter; color:var(--text); background:radial-gradient(1200px 700px at 10% -10%, rgba(52,199,89,.12), transparent 50%), var(--bg)}
+
+.container{width:min(1100px,92%); margin-inline:auto}
+.header{display:flex; align-items:center; justify-content:space-between; gap:10px; padding:16px 0}
+.brand{display:flex; align-items:center; gap:10px; color:var(--text); text-decoration:none; font-weight:700}
+.logo{width:28px; height:28px}
+.logo.small{width:22px; height:22px}
+.badge{font-size:12px; padding:3px 8px; border-radius:999px; background:linear-gradient(90deg, var(--brand), var(--brand2));}
+.nav{display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+.link{color:var(--text); text-decoration:none; opacity:.9}
+.link:hover{opacity:1}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 14px; border-radius:10px; background:var(--brand); color:#fff; border:1px solid transparent; cursor:pointer; box-shadow:var(--shadow); text-decoration:none; font-weight:600}
+.btn.secondary{background:transparent; color:var(--text); border:1px solid var(--border)}
+.btn.small{padding:6px 10px; font-size:13px}
+.btn.xl{padding:14px 18px; font-size:16px; border-radius:12px}
+
+.hero{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center; padding:38px 0 26px}
+.hero-text h1{font-size:40px; line-height:1.1; margin:0}
+.accent{color:var(--brand)}
+.lead{color:var(--muted); font-size:18px; margin:12px 0 18px}
+.bullets{display:grid; gap:6px; margin:12px 0 0; padding-left:18px; color:var(--muted)}
+.hero-shot img{width:100%; border-radius:18px; border:1px solid var(--border); box-shadow:var(--shadow)}
+
+.section{padding:28px 0}
+.section h2{margin:0 0 16px}
+.grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px}
+.card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:16px; box-shadow:var(--shadow)}
+.card h3{margin:0 0 8px}
+
+.screens{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+.screens img{width:100%; height:220px; object-fit:cover; border-radius:14px; border:1px solid var(--border); box-shadow:var(--shadow)}
+
+.roadmap{display:grid; grid-template-columns:repeat(2,1fr); gap:14px}
+.road{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:16px}
+.road h3{margin-top:0}
+
+.cta-banner{background:linear-gradient(90deg, var(--brand), var(--brand2)); color:#fff; margin-top:24px}
+.cta-banner .row{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 0}
+.cta-banner .btn{background:#fff; color:#0b0c0f; box-shadow:none}
+
+.footer{padding:28px 0 40px}
+.foot{display:flex; align-items:center; justify-content:space-between; gap:16px; border-top:1px dashed var(--border); padding-top:18px}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+
+@media (max-width: 900px){
+  .hero{grid-template-columns:1fr; padding-top:24px}
+  .grid{grid-template-columns:1fr 1fr}
+  .screens{grid-template-columns:1fr}
+}
+@media (max-width: 560px){
+  .grid{grid-template-columns:1fr}
+}
+
+
+/* GitHub badges */
+.gh-badges{display:flex; align-items:center; gap:8px; margin-left:8px}
+.badge-ghost{display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; border:1px solid var(--border); color:var(--text); text-decoration:none; opacity:.9}
+.badge-ghost:hover{opacity:1}
+
+/* Changelog list */
+.changelog{display:grid; gap:12px}
+.changelog .entry{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px}
+.changelog .entry h4{margin:0 0 6px}
+.changelog .meta{color:var(--muted); font-size:13px}
